@@ -1,0 +1,14 @@
+# Configuration for deploying to Netlify
+# https://docs.netlify.com/build-settings/
+
+[build]
+  # Command to build the Next.js project
+  command = "npm run build"
+  # Directory to publish
+  publish = ".next"
+
+# The Netlify Next.js plugin is essential for features like
+# server-side rendering, API routes, and image optimization.
+# It is typically installed automatically by Netlify's build system.
+[[plugins]]
+  package = "@netlify/plugin-nextjs"

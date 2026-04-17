@@ -1,0 +1,34 @@
+{
+  "placeholderImages": [
+    {
+      "id": "hero",
+      "description": "Diverse group of students collaborating around a computer with code on the screen.",
+      "imageUrl": "https://source.unsplash.com/random/1200x800?students,coding",
+      "imageHint": "students coding"
+    },
+    {
+      "id": "curriculum",
+      "description": "A structured flowchart or mind map representing a learning path.",
+      "imageUrl": "https://source.unsplash.com/random/600x400?learning,path",
+      "imageHint": "learning path"
+    },
+    {
+      "id": "editor",
+      "description": "A clean, modern code editor interface with colorful syntax highlighting.",
+      "imageUrl": "https://source.unsplash.com/random/600x400?code,editor",
+      "imageHint": "code editor"
+    },
+    {
+      "id": "git",
+      "description": "A visual representation of a Git branch and merge workflow.",
+      "imageUrl": "https://source.unsplash.com/random/600x400?git,branch",
+      "imageHint": "git branch"
+    },
+    {
+      "id": "achievements",
+      "description": "A collection of beautifully designed digital badges and a certificate.",
+      "imageUrl": "https://source.unsplash.com/random/600x400?digital,badge",
+      "imageHint": "digital badge"
+    }
+  ]
+}

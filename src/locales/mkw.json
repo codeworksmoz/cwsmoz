@@ -1,0 +1,39 @@
+{
+  "Header": {
+    "features": "Yoolapa",
+    "curriculum": "Masomelelo",
+    "community": "Umphakathi",
+    "leaderboard": "Mphango wa Athu",
+    "dashboard": "Mphango",
+    "login": "Opacela",
+    "getStarted": "Othome Ohuserya",
+    "changeLanguage": "Mutchince Mwane",
+    "portuguese": "Português",
+    "english": "Inglês",
+    "spanish": "Espanhol",
+    "french": "Francês",
+    "makhuwa": "Emakhuwa",
+    "xichangana": "Xichangana",
+    "userMenu": {
+      "label": "Open user menu",
+      "panel": "Mphango",
+      "logout": "Okhume"
+    }
+  },
+  "Footer": {
+    "description": "Plataforma ya ohuserya wa maprogramelo ya atthu othela ya Mozambiki.",
+    "curriculum": "Masomelelo",
+    "levels": "Miako",
+    "knowledgeAreas": "Miphako ya Nkhili",
+    "certificates": "Masatifikadu",
+    "community": "Umphakathi",
+    "forum": "Fórum",
+    "leaderboard": "Mphango wa Athu",
+    "events": "Sowiima",
+    "contribute": "Othapelela",
+    "legal": "Mwalo",
+    "privacyPolicy": "Mwalo wa Vihuro",
+    "termsOfService": "Mwalo wa Miteko",
+    "copyright": "© {year} Codworks MOZ. Sootheene sothe."
+  }
+}
