@@ -1,0 +1,2 @@
+import type { TheoryLesson } from '../../../../types';
+export const lesson: TheoryLesson = { id: "se-t4", title: "Extreme Programming (XP)", content: "<p>Pair programming e feedback contínuo.</p>", quizId: "se-q4" };

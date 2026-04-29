@@ -1,0 +1,47 @@
+
+{
+  "entities": {
+    "UserProfile": {
+      "title": "User Profile",
+      "description": "Dados do utilizador e estatísticas de aprendizagem",
+      "type": "object",
+      "properties": {
+        "display_name": { "type": "string" },
+        "email": { "type": "string" },
+        "avatar_url": { "type": "string" },
+        "preferred_language": { "type": "string", "default": "pt" },
+        "total_points": { "type": "number", "default": 0 },
+        "streak": { "type": "number", "default": 0 },
+        "created_at": { "type": "string", "format": "date-time" }
+      }
+    },
+    "LessonProgress": {
+      "title": "Lesson Progress",
+      "description": "Progresso em lições e exercícios",
+      "type": "object",
+      "properties": {
+        "user_id": { "type": "string" },
+        "level_id": { "type": "number" },
+        "ka_id": { "type": "string" },
+        "lesson_id": { "type": "string" },
+        "lesson_type": { "type": "string", "enum": ["theory", "exercise"] },
+        "completed": { "type": "boolean", "default": false },
+        "completed_at": { "type": "string", "format": "date-time" },
+        "quiz_passed": { "type": "boolean", "default": false },
+        "quiz_score": { "type": "number" },
+        "last_code": { "type": "string" }
+      }
+    }
+  },
+  "auth": {
+    "providers": ["google", "github", "password", "email"]
+  },
+  "firestore": {
+    "/profiles/{userId}": {
+      "schema": "UserProfile"
+    },
+    "/user_lesson_progress/{progressId}": {
+      "schema": "LessonProgress"
+    }
+  }
+}

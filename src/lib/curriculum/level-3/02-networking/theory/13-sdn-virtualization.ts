@@ -1,0 +1,2 @@
+import type { TheoryLesson } from '../../../types';
+export const lesson: TheoryLesson = { id: "net-t13", title: "SDN e Virtualização de Rede", content: "<p>Software Defined Networking.</p>", quizId: "net-q13" };

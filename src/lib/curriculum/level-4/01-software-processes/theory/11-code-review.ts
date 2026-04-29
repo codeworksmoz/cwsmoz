@@ -1,0 +1,2 @@
+import type { TheoryLesson } from '../../../../types';
+export const lesson: TheoryLesson = { id: "se-t11", title: "Code Review & Pair Programming", content: "<p>Qualidade através do olhar do par.</p>", quizId: "se-q11" };

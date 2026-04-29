@@ -1,19 +1,18 @@
-# **App Name**: Codworks MOZ
+# **App Name**: Codworks Moz
 
 ## Core Features:
 
-- Multi-language Curriculum: Provide a comprehensive learning path aligned with ACM standards, featuring Theory sections and Practice exercises in multiple programming languages (Python, JS, TS, Java, C++). Lessons cover 7 progressive levels and 25+ Knowledge Areas, including Technical English and Git.
-- Interactive Code Editor: An integrated Monaco Editor supporting 15+ languages for real-time coding, execution, and testing. Includes a console output, visual test feedback, live preview for web languages, and keyboard shortcuts.
-- Advanced Exercise Management: Handles custom '.exercise' file format with structured JSON content (title, description, theory, template, solution, tests, hints). The system parses these files, provides execution and validation services for user submissions.
-- Git Version Control Learning Environment: Integrated Git panel within the editor, allowing users to learn and practice Git commands (init, commit, branch, merge, push/pull) in a controlled environment, preparing them for real-world collaboration.
-- Smart Lesson Content Generator: An AI-powered tool that assists in generating or adapting lesson content and practice exercises based on ACM standards and FreeCodeCamp's interactive model, ensuring relevance and engagement for learners.
-- Personalized Progress & Achievements: Track user learning progress through the curriculum, award achievement badges upon module completion, and generate shareable certificates to motivate and recognize learning milestones.
-- Localized & Optimized Experience: Offers full UI and content support for 7 languages (Portuguese, English, Italian, Changana, Macua, Sena, Technical English). Features offline mode, mobile optimization, and high performance to cater to limited internet areas in Mozambique.
+- Interactive Learning Modules: Structured curriculum covering various programming levels and topics (e.g., CS Core, Programming Fundamentals, Web Core, Data Structures, AI/ML), each with theory, quizzes, and laboratory exercises.
+- Code Editor & Runner: Integrated online code editor with the ability to run and test code in multiple languages (e.g., JavaScript, Python, Java, C++) and see immediate feedback, supporting various laboratory exercises including SQL and HTML previews.
+- Quiz & Assessment System: Engaging quizzes to test theoretical knowledge and understanding of concepts, with instant feedback on answers.
+- User Progress Tracking: Track user's learning progress through the curriculum, including completed modules, quiz scores, and lab performance.
+- Certification Generation: Generate dynamic certificates upon completion of specific learning paths or levels.
+- Multi-language Support: Allow users to switch between different interface languages, primarily English and Portuguese (pt.json, en.json), for a localized learning experience.
 
 ## Style Guidelines:
 
-- The chosen color scheme is light. The primary color is a vibrant forest green (#1AB81A), representing growth, nature, and the Mozambican flag. The background color is a very pale green (#E7F3E7), creating a calm and focused learning environment. The accent color is a bright, energetic yellow-green (#B8E529), designed to highlight interactive elements and provide high contrast.
-- Headline font: 'Space Grotesk' (sans-serif) for a modern, tech-inspired, and friendly feel. Body text font: 'Inter' (sans-serif) for clear readability and a neutral, objective presentation. Code font: 'Source Code Pro' (monospace) for excellent legibility of code snippets and technical text.
-- Utilize achievement badges (e.g., ACM, FCC, Git, Level badges) as key visual indicators of progress. Other icons should be clean, educational, and aligned with a contemporary digital interface, clearly conveying their function.
-- A responsive three-panel layout (theory | editor | preview) for the main learning interface. Implement a collapsible sidebar for curriculum navigation and a mobile-optimized hamburger menu for access on smaller screens.
-- Focus on subtle, performant animations that enhance user experience without hindering page load times or responsiveness, prioritizing Lighthouse scores above 95 and fast interaction times.
+- A dark color scheme provides a professional and focused coding environment, minimizing eye strain. The primary color is a rich, deep blue (#2E76FF), symbolizing knowledge and reliability. The background is a very dark, desaturated bluish-gray (#1E2227) for subtle depth and contrast. An accent color of vibrant purple (#A261FF) is used for interactive elements and highlights to add a modern, digital touch.
+- Headlines and UI elements will use 'Space Grotesk' (sans-serif) for a modern, tech-savvy aesthetic. Body text and longer explanations will utilize 'Inter' (sans-serif) for its readability and objective clarity across devices. Code snippets will be rendered in 'Source Code Pro' (monospace) for optimal legibility and standard coding conventions.
+- Use a set of clean, geometric line icons that are easily recognizable and convey function at a glance. Prioritize icons with a slightly rounded finish to soften the tech aesthetic.
+- The application should feature responsive, adaptable layouts. For learning modules, a multi-pane interface (e.g., theory, editor, objectives) will facilitate an immersive and productive learning experience. Dashboard elements will emphasize clear, concise progress indicators and easy navigation. A professional hamburger menu will be used for navigation on smaller screens or when condensed navigation is preferred.
+- Incorporate subtle, performant animations. Examples include smooth transitions between learning module sections, visual feedback for quiz answers, and progress bar fills. These animations should enhance user interaction without being distracting.

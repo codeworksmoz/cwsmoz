@@ -1,0 +1,2 @@
+import type { PracticeExercise } from '../../../types';
+export const exercise: PracticeExercise = { id: "math-p11", language: "concept", title: "Lab: Árvores Geradoras", description: "Spanning Trees", statement: "", template: "", detailedExplanation: "", objectives: [] };

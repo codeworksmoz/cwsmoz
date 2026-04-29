@@ -1,0 +1,1 @@
+import type { TheoryLesson } from '../../../types'; export const lesson: TheoryLesson = { id: "dt-t13", title: "DevTools: Performance Tab", content: "<p>Gravar e analisar o tempo de renderização.</p>", quizId: "dt-q13" };

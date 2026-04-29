@@ -1,37 +1,58 @@
--- Supabase Curriculum Seeding Script
--- Execute este script no seu editor de SQL do Supabase para popular as tabelas do currículo.
+-- Codworks Moz - Complete Curriculum Seed (Levels 1-8)
+-- Limpa currículo antigo preservando usuários
+TRUNCATE TABLE public.quizzes, public.exercises, public.lessons, public.acm_curriculum CASCADE;
 
--- Limpa as tabelas existentes para evitar duplicatas
-TRUNCATE TABLE public.quizzes, public.exercises, public.lessons, public.acm_curriculum RESTART IDENTITY;
+-- ==========================================
+-- NÍVEL 1: FUNDAMENTOS (CORE FOUNDATIONS)
+-- ==========================================
+INSERT INTO public.acm_curriculum (id, ka_code, ka_name, description, level, required_hours, iconName, order_index) VALUES
+('ka-cs-core', 'CS-101', 'Computer Science Core', 'Binário, Lógica Booleana e Arquitetura Von Neumann.', 1, '45h', 'Cpu', 1),
+('ka-programming-f1', 'PF-1', 'Programming Fundamentals', 'Lógica, Variáveis, Loops e Funções.', 1, '40h', 'SquareTerminal', 2),
+('ka-web-f1', 'WEB-1', 'Web Core (HTML/CSS)', 'Estrutura semântica e estilização moderna.', 1, '30h', 'Globe', 3),
+('ka-git-f1', 'GIT-1', 'Git & Version Control', 'Controlo de versões e colaboração.', 1, '15h', 'GitBranch', 4);
 
--- NÍVEL 1 --
+-- Lições Nível 1
+INSERT INTO public.lessons (id, ka_id, title, content_mdx, order_index) VALUES
+('cs-t1', 'ka-cs-core', 'O Mundo Binário', '<p>Computadores funcionam com estados 0 e 1.</p>', 1),
+('pf-t1', 'ka-programming-f1', 'Variáveis e Tipos', '<p>Caixas de memória para guardar dados.</p>', 1),
+('web-t1', 'ka-web-f1', 'Estrutura HTML5', '<p>O esqueleto semântico da web.</p>', 1);
 
--- Inserir Knowledge Areas (KA) do Nível 1
-INSERT INTO public.acm_curriculum (id, ka_code, ka_name, description, level, required_hours, iconName) VALUES
-('ka-cs-core', 'CS-Core', 'Computer Science Core', 'Sistemas binários, lógica booleana, representação de dados.', 1, 40, 'Cpu'),
-('ka-programming', 'PF', 'Programming Fundamentals', 'Variáveis, tipos, estruturas de controle, funções, arrays.', 1, 80, 'Terminal'),
-('ka-web', 'WEB-Core', 'Web Core', 'HTML5 semântico, CSS3 (Flexbox/Grid), padrões web.', 1, 60, 'Globe'),
-('ka-tech-english', 'T-ENG', 'Technical English', 'Vocabulário, leitura de documentação, mensagens de erro.', 1, 30, 'Languages'),
-('ka-git', 'GIT-VC', 'Git & Version Control', 'Comandos básicos, GitHub, controle de versão.', 1, 30, 'GitBranch'),
-('ka-hci', 'HCI', 'Human-Computer Interaction', 'Usabilidade, acessibilidade, design centrado no usuário.', 1, 20, 'MousePointerClick'),
-('ka-dev-tools', 'DEV-Tools', 'Ferramentas de Desenvolvimento', 'IDEs, editores de código, e o ambiente de desenvolvimento.', 1, 10, 'TerminalSquare');
+-- Exercícios Nível 1
+INSERT INTO public.exercises (id, ka_id, lesson_id, title, language, test_cases) VALUES
+('cs-p1', 'ka-cs-core', 'cs-t1', 'Conversão Binária', 'concept', '[{"test": "0101"}]'),
+('pf-p1', 'ka-programming-f1', 'pf-t1', 'Declarando Variáveis', 'javascript', '[{"test": "let nome ="}]');
 
--- Inserir Lições (Lessons) para Nível 1
-INSERT INTO public.lessons (id, ka_id, title, content_mdx, youtube_video_id, order_index) VALUES
-('cs-t1', 'ka-cs-core', 'Sistemas Binários e de Numeração', '<h2>O que são Sistemas de Numeração?</h2> <p>Um sistema de numeração é um conjunto de regras e símbolos que nos permite representar números. O sistema que usamos no dia-a-dia é o <strong>decimal (base 10)</strong>, que usa dez dígitos (0-9).</p> <p>Os computadores, por outro lado, operam com o sistema <strong>binário (base 2)</strong>. Ele usa apenas dois dígitos: 0 e 1. Cada dígito binário é chamado de <strong>bit</strong>.</p> <h3>Por que binário?</h3> <p>Computadores usam transistores, que são como interruptores elétricos. Eles podem estar em um de dois estados: ligado (representado por 1) ou desligado (representado por 0). Esta é a razão fundamental pela qual os computadores funcionam em binário.</p> <h3>Outros Sistemas Importantes:</h3> <ul> <li><strong>Octal (Base 8):</strong> Usa dígitos de 0 a 7.</li> <li><strong>Hexadecimal (Base 16):</strong> Usa dígitos de 0 a 9 e as letras A a F para representar os valores de 10 a 15. É muito usado para representar cores (ex: #FF5733) e endereços de memória.</li> </ul>', '10_yY-sLzJo', 1),
-('cs-t2', 'ka-cs-core', 'Lógica Booleana', '<h2>O que é Lógica Booleana?</h2> <p>A lógica booleana, desenvolvida por George Boole, é a base da computação digital. Ela lida com valores verdadeiros (True) e falsos (False), frequentemente representados por 1 e 0.</p> <h3>Operadores Lógicos Fundamentais:</h3> <p>Existem três operadores principais:</p> <ul> <li><strong>AND (E):</strong> Retorna verdadeiro (1) somente se <em>ambas</em> as entradas forem verdadeiras. Ex: <code>1 AND 1 = 1</code>, <code>1 AND 0 = 0</code>.</li> <li><strong>OR (OU):</strong> Retorna verdadeiro (1) se <em>pelo menos uma</em> das entradas for verdadeira. Ex: <code>1 OR 0 = 1</code>, <code>0 OR 0 = 0</code>.</li> <li><strong>NOT (NÃO):</strong> Inverte o valor da entrada. Ex: <code>NOT 1 = 0</code>, <code>NOT 0 = 1</code>.</li> </ul> <p>Esses operadores são implementados em hardware através de "portas lógicas" (logic gates), que são os blocos de construção dos circuitos digitais e dos processadores.</p>', 'gI-qXk7XojA', 2),
-('cs-t3', 'ka-cs-core', 'Representação de Dados', '<h2>Como os computadores armazenam dados?</h2> <p>Tudo em um computador é armazenado como uma sequência de 0s e 1s. A forma como essa sequência é interpretada depende do tipo de dado.</p> <ul> <li><strong>Caracteres:</strong> Usando tabelas como ASCII e Unicode, cada caractere (letra, número, símbolo) é mapeado para um número único, que é então convertido para binário. Por exemplo, em ASCII, ''A'' é 65, que em binário é <code>01000001</code>.</li> <li><strong>Imagens:</strong> Imagens digitais são compostas por pixels. Cada pixel tem uma cor, e essa cor é representada por números (geralmente para Vermelho, Verde e Azul - RGB). Esses números são então armazenados em binário.</li> <li><strong>Sons:</strong> O som é uma onda contínua. Para ser armazenado digitalmente, a onda é "amostrada" em intervalos regulares, e a amplitude da onda em cada ponto é gravada como um número, que é armazenado em binário.</li> </ul>', 'USr1-k_5s-E', 3),
-('cs-t4', 'ka-cs-core', 'Arquitetura de Computadores (Von Neumann)', '<h2>Como um computador funciona?</h2> <p>A maioria dos computadores modernos segue a arquitetura de Von Neumann, que consiste em quatro componentes principais:</p> <ol> <li><strong>Unidade Central de Processamento (CPU):</strong> O "cérebro" do computador. Executa instruções. Divide-se em: <ul> <li><em>Unidade de Controle (CU):</em> Busca, decodifica e executa as instruções.</li> <li><em>Unidade Lógica e Aritmética (ULA/ALU):</em> Realiza cálculos matemáticos e operações lógicas.</li> </ul> </li> <li><strong>Memória Principal (RAM):</strong> Armazena tanto os dados quanto as instruções dos programas que estão em execução. É volátil, ou seja, seu conteúdo é perdido quando o computador é desligado.</li> <li><strong>Dispositivos de Entrada/Saída (E/S):</strong> Permitem a comunicação com o mundo exterior. Exemplos: teclado, mouse (entrada), monitor, impressora (saída).</li> <li><strong>Barramentos (Buses):</strong> Vias de comunicação que conectam todos os componentes, permitindo a transferência de dados e sinais de controle entre eles.</li> </ol>', 'Qqug2Uncy_A', 4),
-('pf-t1', 'ka-programming', 'Variáveis e Tipos de Dados', '<h2>O que é uma Variável?</h2> <p>Pense em uma variável como uma caixa com uma etiqueta. Você pode guardar informações dentro dessa caixa e usar a etiqueta (o nome da variável) para se referir a ela mais tarde.</p> <pre><code>nome = "Alice"  // ''nome'' é a variável, "Alice" é o valor idade = 30      // ''idade'' é a variável, 30 é o valor </code></pre> <h3>Tipos de Dados Comuns:</h3> <ul> <li><strong>String (texto):</strong> Sequência de caracteres. Ex: <code>"Olá, mundo!"</code>.</li> <li><strong>Integer (inteiro):</strong> Números inteiros, sem casas decimais. Ex: <code>10</code>, <code>-5</code>.</li> <li><strong>Float (ponto flutuante):</strong> Números com casas decimais. Ex: <code>9.99</code>, <code>3.1415</code>.</li> <li><strong>Boolean (booleano):</strong> Representa verdadeiro (True) ou falso (False).</li> <li><strong>Array/Lista:</strong> Uma coleção ordenada de valores. Ex: <code>[1, 2, 3, "maçã"]</code>.</li> </ul>', '_B6K2G_Q4e4', 1),
-('pf-t2', 'ka-programming', 'Estruturas de Controle (Condicionais)', '<h2>Tomando Decisões no Código</h2> <p>Estruturas de controle permitem que seu programa tome decisões e execute diferentes blocos de código com base em certas condições. A mais comum é a instrução <code>if/else</code>.</p> <pre><code>idade = 18 if idade >= 18:   print("Você é maior de idade.") else:   print("Você é menor de idade.") </code></pre> <p>Você também pode encadear múltiplas condições com <code>elif</code> (em Python) ou <code>else if</code> (em outras linguagens).</p>', 's-i64-W0_sA', 2),
-('pf-t3', 'ka-programming', 'Estruturas de Controle (Loops)', '<h2>Repetindo Tarefas</h2> <p>Loops são usados para executar o mesmo bloco de código várias vezes.</p> <h3>Loop ''for''</h3> <p>Usado para iterar sobre uma sequência (como uma lista).</p> <pre><code>frutas = ["maçã", "banana", "cereja"] for fruta in frutas:   print(fruta) </code></pre> <h3>Loop ''while''</h3> <p>Executa um bloco de código enquanto uma condição for verdadeira.</p> <pre><code>contador = 0 while contador < 5:   print(contador)   contador = contador + 1  // Cuidado com loops infinitos! </code></pre>', 'n0p_cQc_i-A', 3),
-('pf-t4', 'ka-programming', 'Funções e Métodos', '<h2>Blocos de Código Reutilizáveis</h2> <p>Funções são blocos de código nomeados que realizam uma tarefa específica. Elas ajudam a organizar o código, evitar repetição e torná-lo mais legível.</p> <pre><code>def saudar(nome):   return f"Olá, {nome}!"  mensagem = saudar("Carlos")  // Chama a função print(mensagem)  // Saída: Olá, Carlos! </code></pre> <p><strong>Métodos</strong> são funções que pertencem a um objeto (veremos mais sobre isso em Programação Orientada a Objetos).</p>', 'o_wD-030D-Y', 4),
-('pf-t5', 'ka-programming', 'Arrays e Coleções', '<h2>Organizando Múltiplos Dados</h2> <p>Arrays (ou listas em linguagens como Python) são estruturas de dados que armazenam uma coleção de itens em uma única variável.</p> <pre><code>numeros = [10, 20, 30, 40, 50]</code></pre> <h3>Acessando Elementos</h3> <p>Os elementos são acessados por seu <strong>índice</strong>, que começa em 0.</p> <pre><code>primeiro_numero = numeros[0]  // Retorna 10 terceiro_numero = numeros[2]  // Retorna 30 </code></pre> <p>Existem outras estruturas de coleção importantes, como <strong>Dicionários/Mapas</strong> (que usam chaves em vez de índices) e <strong>Conjuntos</strong> (que armazenam itens únicos e não ordenados).</p>', 'tVRbu1gJgo4', 5);
+-- ==========================================
+-- NÍVEIS 2 A 7: ESPECIALIZAÇÕES
+-- ==========================================
+INSERT INTO public.acm_curriculum (id, ka_code, ka_name, description, level, required_hours, iconName, order_index) VALUES
+('ka-alg-ds', 'ALG-2', 'Algorithms & Data Structures', 'Eficiência e organização de memória.', 2, '60h', 'Brain', 1),
+('ka-os-net', 'SYS-3', 'Systems & Infrastructure', 'Sistemas Operativos e Redes.', 3, '50h', 'Settings', 1),
+('ka-se-master', 'SE-4', 'Software Engineering', 'Design Patterns e Qualidade.', 4, '40h', 'Layers', 1),
+('ka-ai-sec', 'ADV-5', 'AI & Cybersecurity', 'IA Generativa e Segurança.', 5, '60h', 'ShieldCheck', 1),
+('ka-career', 'PRO-6', 'Professional Development', 'Carreira Global e Soft Skills.', 6, '20h', 'Briefcase', 1),
+('ka-capstone', 'GRAD-7', 'Capstone Project', 'Projeto de Graduação Final.', 7, '100h', 'Trophy', 1);
 
--- Inserir Exercícios (Exercises) para Nível 1
-INSERT INTO public.exercises (id, ka_id, language, title, statement, template_code, test_cases) VALUES
-('js-vars', 'ka-programming', 'javascript', 'Exercício de Variáveis', 'Declare variáveis para nome, idade e cidade.', '// Bem-vindo ao seu primeiro exercício de codificação! // Siga os passos na explicação e escreva seu código abaixo.', '[{"description": "A variável ''nome'' deve existir e ser uma string.", "code": "return typeof nome === ''string'';"}, {"description": "A variável ''idade'' deve existir e ser um número.", "code": "return typeof idade === ''number'';"}, {"description": "A variável ''cidade'' deve existir e ser uma string.", "code": "return typeof cidade === ''string'';"}]');
+-- ==========================================
+-- NÍVEL 8: DOMÍNIO DE LINGUAGENS (MASTERY)
+-- ==========================================
+INSERT INTO public.acm_curriculum (id, ka_code, ka_name, description, level, required_hours, iconName, order_index) VALUES
+('lang-js', 'M-JS', 'JavaScript Master', 'Metaprogramação e Internals do V8.', 8, '80h', 'Zap', 1),
+('lang-rust', 'M-RS', 'Rust Master', 'Ownership e Memory Safety.', 8, '90h', 'Shield', 2),
+('lang-go', 'M-GO', 'Go Master', 'Concorrência nativa e Cloud.', 8, '70h', 'Cloud', 3),
+('lang-python', 'M-PY', 'Python Master', 'AsyncIO e Ciência de Dados.', 8, '80h', 'Cpu', 4),
+('lang-java', 'M-JV', 'Java Master', 'JVM Tuning e Enterprise.', 8, '80h', 'Coffee', 5),
+('lang-kotlin', 'M-KT', 'Kotlin Master', 'Multiplatform e Coroutines.', 8, '60h', 'Smartphone', 6),
+('lang-php', 'M-PHP', 'PHP Master', 'PHP 8.2 e Swoole Performance.', 8, '50h', 'Globe', 7),
+('lang-ruby', 'M-RB', 'Ruby Master', 'Metaprogramação e Elegância.', 8, '50h', 'Gem', 8),
+('lang-cpp', 'M-CPP', 'C++ Master', 'Gestão manual de memória.', 8, '100h', 'Terminal', 9),
+('lang-swift', 'M-SW', 'Swift Master', 'iOS e Performance Nativa.', 8, '70h', 'Smartphone', 10);
 
--- Inserir Quizzes para Nível 1
+-- Amostra de Lições Nível 8
+INSERT INTO public.lessons (id, ka_id, title, content_mdx, order_index) VALUES
+('js-m1', 'lang-js', 'Fase 1: V8 Engine e Call Stack', '<p>Como o motor do Chrome executa o teu código.</p>', 1),
+('rs-m1', 'lang-rust', 'Fase 1: O Sistema de Ownership', '<p>A regra de ouro da memória em Rust.</p>', 1);
+
+-- Amostra de Quizzes Nível 8
 INSERT INTO public.quizzes (id, ka_id, title, questions) VALUES
-('quiz-pf-1', 'ka-programming', 'Quiz de Fundamentos 1', '[{"id": "q1", "question": "Qual tipo de dado é usado para armazenar texto?", "options": ["Integer", "Boolean", "String", "Float"], "correctAnswer": 2}, {"id": "q2", "question": "Qual símbolo é mais comumente usado para atribuir um valor a uma variável?", "options": ["=", "==", ":=", "->"], "correctAnswer": 0}, {"id": "q3", "question": "Um valor booleano (Boolean) pode representar quais estados?", "options": ["Apenas 0", "0 ou 1", "Verdadeiro ou Falso", "Qualquer número"], "correctAnswer": 2}]');
+('quiz-js-m1', 'lang-js', 'Quiz: V8 Internals', '[{"question": "O que é a Call Stack?", "options": ["Uma pilha LIFO", "Uma fila FIFO"], "correctAnswer": 0}]');

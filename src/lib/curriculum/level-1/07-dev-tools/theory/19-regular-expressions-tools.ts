@@ -1,0 +1,1 @@
+import type { TheoryLesson } from '../../../types'; export const lesson: TheoryLesson = { id: "dt-t19", title: "Ferramentas de RegEx", content: "<p>Testadores visuais de padrões.</p>", quizId: "dt-q19" };

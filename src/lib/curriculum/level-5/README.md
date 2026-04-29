@@ -1,23 +1,11 @@
-# Nível 5: Especializações
+# ⚡ Nível 5: Especializações de Elite
 
-Este diretório contém todos os dados de conteúdo para o Nível 5 do currículo do Codworks MOZ.
+Matérias avançadas de alta complexidade.
 
-## Áreas de Conhecimento (Knowledge Areas)
+## 🔬 Tópicos
+- **Web Engineering:** Next.js, Performance.
+- **AI & Data Science:** Modelos, Tensores, RAG.
+- **Cloud & Security:** DevSecOps, Kubernetes.
 
-O Nível 5 é composto pelas seguintes áreas:
-
-- `web-advanced`: Desenvolvimento Web Avançado
-- `mobile`: Desenvolvimento Mobile
-- `ai-ml`: Inteligência Artificial & Machine Learning
-- `cloud`: Computação em Nuvem
-- `cybersecurity`: Cybersecurity
-- `data-science`: Ciência de Dados & Analytics
-- `blockchain`: Blockchain & Web3
-- `game-dev`: Desenvolvimento de Jogos
-- `iot`: Internet das Coisas (IoT)
-
-## Como Contribuir
-
-Para adicionar ou modificar lições, exercícios ou quizzes neste nível, por favor, consulte o guia principal de contribuição do currículo.
-
-➡️ **[Guia de Contribuição do Currículo](../../../../docs/CURRICULUM_GUIDE.md)**
+## ⚠️ Nota de Manutenção
+Devido à profundidade dos temas, as lições teóricas devem conter diagramas (via HTML/CSS) e exemplos de arquitetura reais.

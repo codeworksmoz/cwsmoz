@@ -1,0 +1,2 @@
+import type { TheoryLesson } from '../../../types';
+export const lesson: TheoryLesson = { id: "db-t11", title: "LSM Trees vs B-Trees", content: "<p>Estruturas de dados internas para escrita e leitura massiva.</p>", quizId: "db-q11" };

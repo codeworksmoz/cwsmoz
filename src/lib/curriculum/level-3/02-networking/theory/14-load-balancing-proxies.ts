@@ -1,0 +1,2 @@
+import type { TheoryLesson } from '../../../types';
+export const lesson: TheoryLesson = { id: "net-t14", title: "Load Balancing & Proxies", content: "<p>Distribuição de tráfego.</p>", quizId: "net-q14" };

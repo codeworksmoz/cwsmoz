@@ -1,19 +1,11 @@
-# Nível 6: Desenvolvimento Profissional
+# 💼 Nível 6: Desenvolvimento Profissional
 
-Este diretório contém todos os dados de conteúdo para o Nível 6 do currículo do Codworks MOZ.
+Preparação para o mercado de trabalho global.
 
-## Áreas de Conhecimento (Knowledge Areas)
+## 🎯 Conteúdo
+- Branding Pessoal.
+- LinkedIn e Currículo.
+- Preparação para Entrevistas Técnicas.
 
-O Nível 6 é composto pelas seguintes áreas:
-
--   `career`: Habilidades de Carreira
--   `soft-skills`: Habilidades Interpessoais (Soft Skills)
--   `ethics`: Ética e Profissionalismo
--   `entrepreneurship`: Empreendedorismo
--   `advanced-git`: Git Avançado e Colaboração
-
-## Como Contribuir
-
-Para adicionar ou modificar lições, exercícios ou quizzes neste nível, por favor, consulte o guia principal de contribuição do currículo.
-
-➡️ **[Guia de Contribuição do Currículo](../../../../docs/CURRICULUM_GUIDE.md)**
+## 📝 Prática
+Os laboratórios aqui são predominantemente textuais ou de processo (ex: "Crie o resumo do seu perfil").

@@ -1,0 +1,1 @@
+import type { TheoryLesson } from '../../../types'; export const lesson: TheoryLesson = { id: "go-m17", title: "Reflect Package e Metaprogramação", content: "...", quizId: "go-mq17" };

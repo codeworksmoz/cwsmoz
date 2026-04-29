@@ -1,0 +1,2 @@
+import type { PracticeExercise } from '../../../types';
+export const exercise: PracticeExercise = { id: "math-p6", language: "concept", title: "Lab: Aritmética Modular", description: "Relógios Matemáticos", statement: "", template: "", detailedExplanation: "", objectives: [] };

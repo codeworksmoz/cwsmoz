@@ -1,0 +1,2 @@
+import type { TheoryLesson } from '../../../types';
+export const lesson: TheoryLesson = { id: "net-t17", title: "HTTP/2 & HTTP/3 (QUIC)", content: "<p>Evolução do protocolo HTTP.</p>", quizId: "net-q17" };

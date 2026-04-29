@@ -1,0 +1,2 @@
+import type { TheoryLesson } from '../../../types';
+export const lesson: TheoryLesson = { id: "db-t14", title: "Replicação & Consistência", content: "<p>Sincronização de dados entre instâncias.</p>", quizId: "db-q14" };

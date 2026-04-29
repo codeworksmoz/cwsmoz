@@ -1,0 +1,1 @@
+import type { TheoryLesson } from '../../../types'; export const lesson: TheoryLesson = { id: "go-m12", title: "Sincronização: Mutex e WaitGroup", content: "...", quizId: "go-mq12" };

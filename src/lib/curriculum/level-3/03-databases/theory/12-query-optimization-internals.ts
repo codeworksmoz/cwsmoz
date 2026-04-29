@@ -1,0 +1,2 @@
+import type { TheoryLesson } from '../../../types';
+export const lesson: TheoryLesson = { id: "db-t12", title: "Execução de Queries Internals", content: "<p>Como o motor de DB planeia e otimiza uma query.</p>", quizId: "db-q12" };

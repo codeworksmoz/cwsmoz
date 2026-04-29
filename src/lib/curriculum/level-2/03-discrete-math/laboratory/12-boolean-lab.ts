@@ -1,0 +1,2 @@
+import type { PracticeExercise } from '../../../types';
+export const exercise: PracticeExercise = { id: "math-p12", language: "concept", title: "Lab: Simplificação de Karnaugh", description: "Otimização Lógica", statement: "", template: "", detailedExplanation: "", objectives: [] };

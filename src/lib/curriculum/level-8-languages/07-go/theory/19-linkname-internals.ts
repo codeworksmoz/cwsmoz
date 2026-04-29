@@ -1,0 +1,1 @@
+import type { TheoryLesson } from '../../../types'; export const lesson: TheoryLesson = { id: "go-m19", title: "go:linkname e Internals do Runtime", content: "...", quizId: "go-mq19" };

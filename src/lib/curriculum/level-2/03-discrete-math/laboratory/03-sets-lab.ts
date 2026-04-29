@@ -1,0 +1,2 @@
+import type { PracticeExercise } from '../../../types';
+export const exercise: PracticeExercise = { id: "math-p3", language: "concept", title: "Lab: Operações de Conjuntos", description: "União e Intersecção", statement: "", template: "", detailedExplanation: "", objectives: [] };

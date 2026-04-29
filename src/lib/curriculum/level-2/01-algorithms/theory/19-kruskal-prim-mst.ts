@@ -1,0 +1,1 @@
+import type { TheoryLesson } from '../../../types'; export const lesson: TheoryLesson = { id: "alg-t19", title: "Kruskal & Prim (MST)", content: "<p>Minimum Spanning Trees.</p>", quizId: "alg-q19" };

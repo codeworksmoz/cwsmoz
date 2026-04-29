@@ -1,0 +1,2 @@
+import type { PracticeExercise } from '../../../types';
+export const exercise: PracticeExercise = { id: "math-p4", language: "concept", title: "Lab: Mapeamento de Funções", description: "Injetividade", statement: "", template: "", detailedExplanation: "", objectives: [] };

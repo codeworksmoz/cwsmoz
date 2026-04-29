@@ -1,0 +1,2 @@
+import type { TheoryLesson } from '../../../types';
+export const lesson: TheoryLesson = { id: "net-t12", title: "IPv6 Deep Dive", content: "<p>Exploração da nova geração de endereçamento IP.</p>", quizId: "net-q12" };

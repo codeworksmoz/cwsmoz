@@ -1,0 +1,2 @@
+import type { TheoryLesson } from '../../../types';
+export const lesson: TheoryLesson = { id: "db-t16", title: "Algoritmos de Consenso (Raft/Paxos)", content: "<p>Garantindo acordos em sistemas distribuídos.</p>", quizId: "db-q16" };

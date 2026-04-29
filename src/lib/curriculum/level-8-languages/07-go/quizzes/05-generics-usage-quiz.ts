@@ -1,0 +1,1 @@
+import type { Quiz } from '../../../types'; export const quiz: Quiz = { id: "go-mq5", title: "Quiz 5", passingScore: 80, questions: [] };

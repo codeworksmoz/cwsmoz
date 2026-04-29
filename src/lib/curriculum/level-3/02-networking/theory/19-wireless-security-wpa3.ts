@@ -1,0 +1,2 @@
+import type { TheoryLesson } from '../../../types';
+export const lesson: TheoryLesson = { id: "net-t19", title: "Segurança Wireless (WPA3)", content: "<p>Proteção de redes sem fios.</p>", quizId: "net-q19" };

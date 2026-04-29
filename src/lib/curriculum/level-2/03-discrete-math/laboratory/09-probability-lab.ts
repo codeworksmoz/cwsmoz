@@ -1,0 +1,2 @@
+import type { PracticeExercise } from '../../../types';
+export const exercise: PracticeExercise = { id: "math-p9", language: "concept", title: "Lab: Espaço Amostral", description: "Eventos e Probabilidades", statement: "", template: "", detailedExplanation: "", objectives: [] };

@@ -1,0 +1,2 @@
+import type { TheoryLesson } from '../../../types';
+export const lesson: TheoryLesson = { id: "db-t13", title: "Sharding & Partitioning", content: "<p>Escalando horizontalmente.</p>", quizId: "db-q13" };

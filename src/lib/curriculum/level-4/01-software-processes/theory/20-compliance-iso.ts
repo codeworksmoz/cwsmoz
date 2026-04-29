@@ -1,0 +1,2 @@
+import type { TheoryLesson } from '../../../../types';
+export const lesson: TheoryLesson = { id: "se-t20", title: "Compliance & Normas ISO", content: "<p>Padrões internacionais.</p>", quizId: "se-q20" };

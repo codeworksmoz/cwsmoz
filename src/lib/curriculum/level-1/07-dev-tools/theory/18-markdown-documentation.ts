@@ -1,0 +1,1 @@
+import type { TheoryLesson } from '../../../types'; export const lesson: TheoryLesson = { id: "dt-t18", title: "Markdown para Documentação", content: "<p>Escrever READMEs profissionais.</p>", quizId: "dt-q18" };

@@ -1,0 +1,1 @@
+import type { TheoryLesson } from '../../../types'; export const lesson: TheoryLesson = { id: "dt-t20", title: "Interfaces de Linha de Comando de Nuvem", content: "<p>Vercel CLI, Firebase CLI e AWS CLI.</p>", quizId: "dt-q20" };

@@ -1,0 +1,1 @@
+import type { TheoryLesson } from '../../../types'; export const lesson: TheoryLesson = { id: "dt-t16", title: "Local Tunneling com Ngrok", content: "<p>Expor o localhost para a internet de forma segura.</p>", quizId: "dt-q16" };

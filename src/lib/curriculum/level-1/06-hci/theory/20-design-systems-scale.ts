@@ -1,0 +1,1 @@
+import type { TheoryLesson } from '../../../types'; export const lesson: TheoryLesson = { id: "hci-t20", title: "Design Systems em Escala", content: "<p>Componentização e consistência.</p>", quizId: "hci-q20" };

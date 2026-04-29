@@ -1,47 +1,33 @@
-# Codworks MOZ commit -m "Initial commit: Setup Codworks MOZ platform"
-d - Plataforma de Educação em Programação
+# 🚀 Codworks Moz | Engenharia de Software de Elite
 
-Bem-vindo ao Codworks MOZ! Esta é uma plataforma de educação em programação de código aberto, construída com Next.js, TypeScript e Tailwind CSS, projetada para oferecer um currículo abrangente e interativo, do básico ao avançado.
+A plataforma de aprendizagem interactiva definitiva para a próxima geração de engenheiros de software em Moçambique.
 
-## Visão Geral do Projeto
+## 📚 Documentação Técnica de Elite
 
-O objetivo do Codworks MOZ é fornecer educação em programação de alta qualidade, acessível a todos, com um foco especial em Moçambique. A plataforma é estruturada em torno de um currículo modular, com lições teóricas, exercícios práticos interativos e quizzes para validar o conhecimento.
+Para compreender as entranhas deste projeto, consulte os manuais específicos:
 
-## Começando
+### 🏛️ Arquitetura e Core
+- [Architecture Overview](docs/system-architecture.md) - O modelo híbrido e stack técnica.
+- [Curriculum Engine](docs/curriculum-engine.md) - O motor pedagógico e a lógica de herança.
+- [Curriculum Architect Manual](docs/curriculum-manual.md) - Como expandir e criar novas lições.
+- [Security & Compliance](docs/security-compliance.md) - Protocolos de segurança e privacidade.
 
-Para rodar o projeto localmente, siga estes passos:
+### 💻 Engenharia de Software
+- [Frontend Engineering](docs/frontend-engineering.md) - Next.js, Editor e Syntax Highlighting.
+- [Backend Infrastructure](docs/backend-infrastructure.md) - Supabase, RLS e Schema de Dados.
+- [AI Integration](docs/ai-integration.md) - Implementação de IA com Genkit e Gemini.
 
-1.  **Instale as dependências:**
-    ```bash
-    npm install
-    ```
-
-2.  **Rode o servidor de desenvolvimento:**
-    ```bash
-    npm run dev
-    ```
-
-3.  Abra [http://localhost:9002](http://localhost:9002) no seu navegador para ver a aplicação.
-
-## Estrutura do Projeto
-
-O projeto é organizado da seguinte forma:
-
--   `src/app/`: Contém as páginas da aplicação, seguindo a estrutura do App Router do Next.js.
--   `src/components/`: Componentes React reutilizáveis (UI, layout, etc.).
--   `src/context/`: Provedores de contexto React para gerenciar o estado global (autenticação, progresso).
--   `src/lib/curriculum/`: O coração da plataforma. Contém todos os dados do currículo, organizados por níveis e áreas de conhecimento.
--   `docs/`: Documentação importante do projeto.
-
-## Como Contribuir
-
-A contribuição mais valiosa para este projeto é a expansão do conteúdo do currículo. Se você deseja adicionar novas lições, exercícios, ou até mesmo novas áreas de conhecimento, por favor, leia nosso guia detalhado.
-
-➡️ **[Guia de Contribuição do Currículo](docs/CURRICULUM_GUIDE.md)**
-
-Este guia explica a estrutura de dados e o passo a passo para adicionar novo conteúdo educacional à plataforma.
+### 🎨 Design e Lançamento
+- [Design System (UI/UX)](docs/ui-ux-design-system.md) - Tokens OKLCH, Tipografia e ShadCN.
+- [Deployment & Operations](docs/deployment-operations.md) - Guia de lançamento e CI/CD.
 
 ---
 
-Este projeto foi construído no Firebase Studio.
-# Codworks MOZ
+## 🏗️ Arquitetura do Currículo (Modelo Híbrido)
+
+A plataforma utiliza um modelo inovador para máxima performance e facilidade de manutenção:
+1. **Conteúdo Estático (Git):** Lições e laboratórios residem em `src/lib/curriculum/`.
+2. **Estado Dinâmico (Supabase):** Progresso, ranking e comunidade residem na Cloud.
+
+---
+© 2024 Codworks Moz. Empowering the next tech hub.

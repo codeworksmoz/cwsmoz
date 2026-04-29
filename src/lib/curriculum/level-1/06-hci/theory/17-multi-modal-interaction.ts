@@ -1,0 +1,1 @@
+import type { TheoryLesson } from '../../../types'; export const lesson: TheoryLesson = { id: "hci-t17", title: "Interação Multi-modal", content: "<p>Voz, toque e visão em conjunto.</p>", quizId: "hci-q17" };

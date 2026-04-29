@@ -1,18 +1,11 @@
-# Nível 3: Sistemas e Infraestrutura
+# ⚙️ Nível 3: Sistemas e Infraestrutura
 
-Este diretório contém todos os dados de conteúdo para o Nível 3 do currículo do Codworks MOZ.
+Exploração de Sistemas Operativos, Redes e Bases de Dados.
 
-## Áreas de Conhecimento (Knowledge Areas)
+## 📋 Organização
+- `01-os`: Kernels, Processos e Memória.
+- `02-networking`: Protocolos e Arquitetura de Redes.
+- `03-databases`: SQL, NoSQL e ACID.
 
-O Nível 3 é composto pelas seguintes áreas:
-
--   `os`: Sistemas Operacionais
--   `networking`: Redes e Comunicações
--   `databases`: Sistemas de Banco de Dados
--   `security`: Garantia e Segurança da Informação
-
-## Como Contribuir
-
-Para adicionar ou modificar lições, exercícios ou quizzes neste nível, por favor, consulte o guia principal de contribuição do currículo.
-
-➡️ **[Guia de Contribuição do Currículo](../../../../docs/CURRICULUM_GUIDE.md)**
+## ⌨️ Laboratórios
+Os laboratórios aqui utilizam frequentemente a linguagem `bash` ou `sql` para simular interações de sistema e queries.

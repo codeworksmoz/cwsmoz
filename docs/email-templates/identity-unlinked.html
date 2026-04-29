@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Segurança: Conta Desvinculada - Codworks Moz</title>
+    <style>
+        body { margin: 0; padding: 0; background-color: #0f172a; font-family: 'Inter', sans-serif; color: #f8fafc; }
+        .main { background-color: #1e293b; margin: 20px auto; width: 100%; max-width: 600px; border-radius: 24px; border: 1px solid #334155; overflow: hidden; }
+        .header { padding: 40px; text-align: center; background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%); }
+        .content { padding: 40px; text-align: center; }
+        .title { font-size: 24px; font-weight: 700; color: #ffffff; margin-bottom: 20px; }
+        .text { font-size: 16px; line-height: 26px; color: #94a3b8; margin-bottom: 30px; }
+        .footer { padding: 30px; text-align: center; font-size: 12px; color: #64748b; }
+        .accent { color: #3b82f6; }
+    </style>
+</head>
+<body>
+    <table class="main">
+        <tr><td class="header"><div style="font-size: 24px; font-weight: 900; color: #ffffff;">Codworks <span class="accent">Moz</span></div></td></tr>
+        <tr>
+            <td class="content">
+                <h1 class="title">Identidade desvinculada 🔓</h1>
+                <p class="text">Informamos que a tua conta de <strong>{{ .Data.provider }}</strong> foi desvinculada do teu perfil Codworks Moz.</p>
+                <p class="text">Já não poderás entrar na plataforma utilizando este provedor, a menos que o vincules novamente nas tuas definições de perfil.</p>
+            </td>
+        </tr>
+        <tr><td class="footer">&copy; 2024 Codworks Moz. Maputo, Moçambique.</td></tr>
+    </table>
+</body>
+</html>

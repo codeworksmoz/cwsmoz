@@ -1,0 +1,2 @@
+import type { TheoryLesson } from '../../../types';
+export const lesson: TheoryLesson = { id: "db-t18", title: "Vector Databases para AI", content: "<p>Armazenamento de embeddings.</p>", quizId: "db-q18" };

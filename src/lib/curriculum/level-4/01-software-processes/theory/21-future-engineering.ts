@@ -1,0 +1,2 @@
+import type { TheoryLesson } from '../../../../types';
+export const lesson: TheoryLesson = { id: "se-t21", title: "O Futuro da Engenharia de Software", content: "<p>Tendências e IA.</p>", quizId: "se-q21" };

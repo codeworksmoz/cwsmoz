@@ -1,0 +1,1 @@
+import type { TheoryLesson } from '../../../types'; export const lesson: TheoryLesson = { id: "go-m3", title: "Padrões de Tratamento de Erros", content: "...", quizId: "go-mq3" };

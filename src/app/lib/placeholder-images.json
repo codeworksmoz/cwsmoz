@@ -1,0 +1,41 @@
+
+{
+  "placeholderImages": [
+    {
+      "id": "hero-bg",
+      "description": "Abstract coding background with deep blue and purple tones",
+      "imageUrl": "https://picsum.photos/seed/codeworks1/1200/800",
+      "imageHint": "coding abstract"
+    },
+    {
+      "id": "cs-core",
+      "description": "Computer Science fundamentals illustration",
+      "imageUrl": "https://picsum.photos/seed/cs-core/400/300",
+      "imageHint": "computer science"
+    },
+    {
+      "id": "web-dev",
+      "description": "Web development technologies",
+      "imageUrl": "https://picsum.photos/seed/webdev/400/300",
+      "imageHint": "web technology"
+    },
+    {
+      "id": "ai-ml",
+      "description": "Artificial Intelligence concept",
+      "imageUrl": "https://picsum.photos/seed/ai-ml/400/300",
+      "imageHint": "artificial intelligence"
+    },
+    {
+      "id": "certificate-badge",
+      "description": "A golden badge for certification",
+      "imageUrl": "https://picsum.photos/seed/cert/200/200",
+      "imageHint": "gold medal"
+    },
+    {
+      "id": "avatar-fallback",
+      "description": "User avatar placeholder",
+      "imageUrl": "https://picsum.photos/seed/user/100/100",
+      "imageHint": "user profile"
+    }
+  ]
+}

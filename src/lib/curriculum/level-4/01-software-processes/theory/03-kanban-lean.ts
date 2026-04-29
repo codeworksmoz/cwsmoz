@@ -1,0 +1,2 @@
+import type { TheoryLesson } from '../../../../types';
+export const lesson: TheoryLesson = { id: "se-t3", title: "Kanban & Lean Manufacturing", content: "<p>Gestão visual e eliminação de desperdícios.</p>", quizId: "se-q3" };

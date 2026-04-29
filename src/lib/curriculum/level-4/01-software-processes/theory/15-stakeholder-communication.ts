@@ -1,0 +1,2 @@
+import type { TheoryLesson } from '../../../../types';
+export const lesson: TheoryLesson = { id: "se-t15", title: "Comunicação com Stakeholders", content: "<p>Alinhamento de expectativas.</p>", quizId: "se-q15" };

@@ -1,0 +1,2 @@
+import type { TheoryLesson } from '../../../types';
+export const lesson: TheoryLesson = { id: "db-t19", title: "Armazenamento Colunar", content: "<p>Otimização para análise de Big Data.</p>", quizId: "db-q19" };

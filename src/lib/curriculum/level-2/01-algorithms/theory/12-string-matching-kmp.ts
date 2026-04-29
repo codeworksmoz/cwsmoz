@@ -1,0 +1,1 @@
+import type { TheoryLesson } from '../../../types'; export const lesson: TheoryLesson = { id: "alg-t12", title: "String Matching (KMP)", content: "<p>Advanced pattern searching.</p>", quizId: "alg-q12" };

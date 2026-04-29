@@ -1,0 +1,2 @@
+import type { TheoryLesson } from '../../../types';
+export const lesson: TheoryLesson = { id: "net-t18", title: "NAT & Hole Punching", content: "<p>Travessia de firewalls e routers.</p>", quizId: "net-q18" };

@@ -1,0 +1,2 @@
+import type { TheoryLesson } from '../../../types';
+export const lesson: TheoryLesson = { id: "net-t20", title: "Monitorização (SNMP/Netflow)", content: "<p>Visibilidade de rede.</p>", quizId: "net-q20" };

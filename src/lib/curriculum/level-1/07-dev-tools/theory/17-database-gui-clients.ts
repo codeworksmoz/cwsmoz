@@ -1,0 +1,1 @@
+import type { TheoryLesson } from '../../../types'; export const lesson: TheoryLesson = { id: "dt-t17", title: "Clientes GUI para Bases de Dados", content: "<p>TablePlus, DBeaver e VS Code Database extensions.</p>", quizId: "dt-q17" };

@@ -1,0 +1,1 @@
+import type { TheoryLesson } from '../../../types'; export const lesson: TheoryLesson = { id: "rs-m13", title: "Modelo de Atores em Rust", content: "...", quizId: "rs-mq13" };

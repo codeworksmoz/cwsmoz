@@ -1,0 +1,1 @@
+import type { TheoryLesson } from '../../../types'; export const lesson: TheoryLesson = { id: "go-m2", title: "Composição over Herança com Structs", content: "...", quizId: "go-mq2" };

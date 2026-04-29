@@ -1,0 +1,1 @@
+import type { TheoryLesson } from '../../../types'; export const lesson: TheoryLesson = { id: "go-m8", title: "Goroutines e o Modelo CSP", content: "...", quizId: "go-mq8" };

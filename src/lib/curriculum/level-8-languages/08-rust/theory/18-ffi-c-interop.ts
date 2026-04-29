@@ -1,0 +1,1 @@
+import type { TheoryLesson } from '../../../types'; export const lesson: TheoryLesson = { id: "rs-m18", title: "FFI e Interoperabilidade com C", content: "...", quizId: "rs-mq18" };

@@ -1,0 +1,2 @@
+import type { TheoryLesson } from '../../../types';
+export const lesson: TheoryLesson = { id: "db-t17", title: "Bases de Dados In-Memory", content: "<p>Redis e cache de alto desempenho.</p>", quizId: "db-q17" };

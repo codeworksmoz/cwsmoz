@@ -4,64 +4,58 @@
 
 @layer base {
   :root {
-    --background: 120 33% 93%; /* very pale green */
-    --foreground: 120 10% 20%; /* dark green-gray */
-    --card: 120 20% 98%; /* almost white with a hint of green */
-    --card-foreground: 120 10% 20%;
-    --popover: 120 20% 98%;
-    --popover-foreground: 120 10% 20%;
-    --primary: 120 73% 41%; /* forest green */
-    --primary-foreground: 0 0% 98%; /* white */
-    --secondary: 120 20% 88%; /* slightly darker pale green */
-    --secondary-foreground: 120 10% 20%;
-    --muted: 120 20% 88%;
-    --muted-foreground: 120 10% 40%;
-    --accent: 76 76% 53%; /* yellow-green */
-    --accent-foreground: 76 15% 10%; /* almost black */
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+    --primary: 219 100% 59%;
+    --primary-foreground: 210 40% 98%;
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+    --accent: 266 100% 69%;
+    --accent-foreground: 222.2 47.4% 11.2%;
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 0 0% 98%;
-    --border: 120 20% 85%;
-    --input: 120 20% 85%;
-    --ring: 76 76% 53%;
-    --radius: 0.8rem;
-    --sidebar-background: 0 0% 98%;
-    --sidebar-foreground: 240 5.3% 26.1%;
-    --sidebar-primary: 240 5.9% 10%;
-    --sidebar-primary-foreground: 0 0% 98%;
-    --sidebar-accent: 240 4.8% 95.9%;
-    --sidebar-accent-foreground: 240 5.9% 10%;
-    --sidebar-border: 220 13% 91%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 222.2 84% 4.9%;
+    --radius: 0.75rem;
+
+    /* Logo Specific Variables */
+    --logo-bg-outer: 210 40% 95%;
+    --logo-bg-inner: 0 0% 100%;
+    --logo-text: 24 100% 50%;
   }
 
   .dark {
-    --background: 120 10% 8%;
-    --foreground: 120 5% 95%;
-    --card: 120 10% 12%;
-    --card-foreground: 120 5% 95%;
-    --popover: 120 10% 8%;
-    --popover-foreground: 120 5% 95%;
-    --primary: 120 73% 41%;
-    --primary-foreground: 120 10% 20%;
-    --secondary: 120 10% 15%;
-    --secondary-foreground: 120 5% 95%;
-    --muted: 120 10% 15%;
-    --muted-foreground: 120 5% 63%;
-    --accent: 76 76% 53%;
-    --accent-foreground: 76 15% 10%;
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+    --card: 222.2 84% 6.5%;
+    --card-foreground: 210 40% 98%;
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 219 100% 59%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+    --accent: 266 100% 69%;
+    --accent-foreground: 210 40% 98%;
     --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 0 0% 98%;
-    --border: 120 10% 17%;
-    --input: 120 10% 17%;
-    --ring: 76 76% 53%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+
+    /* Logo Specific Variables Dark */
+    --logo-bg-outer: 222.2 84% 3%;
+    --logo-bg-inner: 0 0% 100%;
+    --logo-text: 24 100% 60%;
   }
 }
 
@@ -70,6 +64,57 @@
     @apply border-border;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground transition-colors duration-300 min-h-[100dvh];
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
+
+/* Elite Code Highlighting */
+.code-tag { @apply text-blue-400; }
+.code-attr { @apply text-cyan-300; }
+.code-string { @apply text-green-400; }
+.code-comment { @apply text-muted-foreground italic; }
+.code-keyword { @apply text-purple-400 font-bold; }
+.code-var { @apply text-orange-400; }
+.code-type { @apply text-yellow-500; }
+
+/* Custom Scrollbar for Code Blocks */
+.custom-scrollbar::-webkit-scrollbar {
+  height: 4px;
+  width: 4px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+  @apply bg-black/20;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  @apply bg-primary/40 rounded-full hover:bg-primary/60;
+}
+
+/* Fix for mobile scroll issues */
+.scroll-container {
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  @apply bg-transparent;
+}
+::-webkit-scrollbar-thumb {
+  @apply bg-muted-foreground/20 rounded-full hover:bg-muted-foreground/40 transition-colors;
+}
+
+.prose {
+  @apply text-foreground/90;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+@media (max-width: 640px) {
+  .prose {
+    font-size: 0.875rem;
   }
 }

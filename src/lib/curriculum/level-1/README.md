@@ -1,20 +1,17 @@
-# Nível 1: Fundamentos (Core Foundations)
+# 🏛️ Nível 1: Fundamentos (Core Foundations)
 
-Este diretório contém todos os dados de conteúdo para o Nível 1 do currículo do Codworks MOZ.
+Este nível é a porta de entrada para a engenharia. Foca-se em conceitos universais e ferramentas de base.
 
-## Áreas de Conhecimento (Knowledge Areas)
+## 📁 Estrutura de Pastas
+Cada pasta numerada (ex: `01-cs-core`) representa uma **Knowledge Area (KA)**.
 
-O Nível 1 é composto pelas seguintes áreas:
+### Como adicionar conteúdo:
+1. **Teoria:** Crie ficheiros `.ts` dentro da pasta `theory/` da KA.
+2. **Quizzes:** Crie ficheiros `.ts` dentro da pasta `quizzes/` da KA.
+3. **Prática:** Adicione exercícios no objeto `practice` dentro de `laboratory.ts`.
+4. **Registro:** Certifique-se de que a KA está importada e listada no `index.ts` deste diretório.
 
--   `cs-core`: Fundamentos de Ciência da Computação.
--   `programming-fundamentals`: Fundamentos de Programação.
--   `web-core`: Fundamentos da Web (HTML/CSS).
--   `tech-english`: Inglês Técnico para Desenvolvedores.
--   `git-vc`: Controle de Versão com Git.
--   `hci`: Interação Humano-Computador.
-
-## Como Contribuir
-
-Para adicionar ou modificar lições, exercícios ou quizzes neste nível, por favor, consulte o guia principal de contribuição do currículo.
-
-➡️ **[Guia de Contribuição do Currículo](../../../../docs/CURRICULUM_GUIDE.md)**
+## 🔗 Vinculação
+- O `id` da lição teórica deve ser único (ex: `cs-t1`).
+- O `quizId` na lição teórica deve corresponder ao `id` de um quiz existente.
+- A ordem no `findOrderedLessons()` em `src/lib/curriculum/index.ts` define a navegação automática.

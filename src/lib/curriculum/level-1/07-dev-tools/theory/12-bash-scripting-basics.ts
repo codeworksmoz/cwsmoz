@@ -1,0 +1,1 @@
+import type { TheoryLesson } from '../../../types'; export const lesson: TheoryLesson = { id: "dt-t12", title: "Bash Scripting para Automação", content: "<p>Criar ficheiros .sh para tarefas repetitivas.</p>", quizId: "dt-q12" };

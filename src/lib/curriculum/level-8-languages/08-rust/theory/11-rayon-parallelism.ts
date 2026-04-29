@@ -1,0 +1,1 @@
+import type { TheoryLesson } from '../../../types'; export const lesson: TheoryLesson = { id: "rs-m11", title: "Paralelismo de Dados com Rayon", content: "...", quizId: "rs-mq11" };

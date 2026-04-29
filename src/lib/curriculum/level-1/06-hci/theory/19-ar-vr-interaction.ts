@@ -1,0 +1,1 @@
+import type { TheoryLesson } from '../../../types'; export const lesson: TheoryLesson = { id: "hci-t19", title: "Interação em RA e RV", content: "<p>Interfaces espaciais.</p>", quizId: "hci-q19" };

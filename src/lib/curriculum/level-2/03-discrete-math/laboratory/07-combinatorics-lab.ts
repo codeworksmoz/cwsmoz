@@ -1,0 +1,2 @@
+import type { PracticeExercise } from '../../../types';
+export const exercise: PracticeExercise = { id: "math-p7", language: "concept", title: "Lab: Árvores de Decisão", description: "Contagem Básica", statement: "", template: "", detailedExplanation: "", objectives: [] };

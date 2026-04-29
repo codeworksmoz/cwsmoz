@@ -1,0 +1,1 @@
+import type { TheoryLesson } from '../../../types'; export const lesson: TheoryLesson = { id: "rs-m17", title: "Allocator API e Heaps Customizadas", content: "...", quizId: "rs-mq17" };

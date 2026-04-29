@@ -1,0 +1,2 @@
+import type { TheoryLesson } from '../../../types';
+export const lesson: TheoryLesson = { id: "db-t15", title: "Teorema CAP Deep Dive", content: "<p>Consistência, Disponibilidade e Partição.</p>", quizId: "db-q15" };

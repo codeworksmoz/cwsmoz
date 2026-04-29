@@ -1,0 +1,1 @@
+import type { TheoryLesson } from '../../../types'; export const lesson: TheoryLesson = { id: "rs-m12", title: "Primitivas de Concorrência de Baixo Nível", content: "...", quizId: "rs-mq12" };

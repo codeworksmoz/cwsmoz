@@ -1,0 +1,2 @@
+import type { TheoryLesson } from '../../../../types';
+export const lesson: TheoryLesson = { id: "se-t19", title: "Ética na Engenharia", content: "<p>Responsabilidade profissional.</p>", quizId: "se-q19" };

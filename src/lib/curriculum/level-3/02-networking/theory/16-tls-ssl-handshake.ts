@@ -1,0 +1,2 @@
+import type { TheoryLesson } from '../../../types';
+export const lesson: TheoryLesson = { id: "net-t16", title: "TLS/SSL Handshake", content: "<p>Segurança na camada de transporte.</p>", quizId: "net-q16" };

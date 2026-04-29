@@ -1,0 +1,2 @@
+import type { TheoryLesson } from '../../../types';
+export const lesson: TheoryLesson = { id: "net-t21", title: "Futuro: Redes Quânticas", content: "<p>Exploração das tendências futuras.</p>", quizId: "net-q21" };

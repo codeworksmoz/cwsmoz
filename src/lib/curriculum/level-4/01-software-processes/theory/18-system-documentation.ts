@@ -1,0 +1,2 @@
+import type { TheoryLesson } from '../../../../types';
+export const lesson: TheoryLesson = { id: "se-t18", title: "Documentação de Sistemas", content: "<p>Preservando o conhecimento.</p>", quizId: "se-q18" };

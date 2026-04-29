@@ -1,0 +1,1 @@
+import type { TheoryLesson } from '../../../types'; export const lesson: TheoryLesson = { id: "go-m11", title: "Select e Timeouts em Sistemas Distribuídos", content: "...", quizId: "go-mq11" };

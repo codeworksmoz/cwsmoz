@@ -1,0 +1,2 @@
+import type { TheoryLesson } from '../../../types';
+export const lesson: TheoryLesson = { id: "net-t11", title: "Protocolos de Routing (BGP/OSPF)", content: "<p>A lógica de encaminhamento global da Internet.</p>", quizId: "net-q11" };

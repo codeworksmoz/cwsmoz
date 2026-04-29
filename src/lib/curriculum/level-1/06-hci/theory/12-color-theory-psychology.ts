@@ -1,0 +1,1 @@
+import type { TheoryLesson } from '../../../types'; export const lesson: TheoryLesson = { id: "hci-t12", title: "Teoria das Cores e Psicologia", content: "<p>Significado das cores em diferentes culturas.</p>", quizId: "hci-q12" };

@@ -1,0 +1,1 @@
+import type { Quiz } from '../../../types'; export const quiz: Quiz = { id: "rs-mq4", title: "Quiz: Traits", passingScore: 80, questions: [] };
